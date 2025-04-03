@@ -150,6 +150,7 @@ func TokenAuth() func(c *gin.Context) {
 	}
 }
 
+// check model with openai api
 func shouldCheckModel(c *gin.Context) bool {
 	if strings.HasPrefix(c.Request.URL.Path, "/v1/completions") {
 		return true
