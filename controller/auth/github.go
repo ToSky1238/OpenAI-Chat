@@ -81,7 +81,7 @@ func getGitHubUserInfoByCode(code string) (*GitHubUser, error) {
 	}
 	return &githubUser, nil
 }
-
+// github oAuth with crendtials.
 func GitHubOAuth(c *gin.Context) {
 	ctx := c.Request.Context()
 	session := sessions.Default(c)
